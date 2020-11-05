@@ -8,6 +8,7 @@ def loop_message_five_times(message)
 end
 
 def loop_message_n_times(message, n)
+  count = 0
   while count < n
   puts message 
   count += 1 
@@ -15,6 +16,7 @@ def loop_message_n_times(message, n)
 end
 
 def output_array(array)
+  count = 0
   while count < array.length
   puts array
   count += 1 
@@ -22,8 +24,10 @@ def output_array(array)
 end
 
 def return_string_array(array)
+  count = 0 
   while count < array.length
-  array.to_s
+  array[count] = array[count].to_s
   count += 1 
-  end   
+  end
+  array
 end

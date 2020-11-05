@@ -16,12 +16,14 @@ end
 
 def output_array(array)
   while count < array.length
-  puts message 
+  puts array
   count += 1 
   end  
 end
 
 def return_string_array(array)
-  
-  
+  while count < array.length
+  array.to_s
+  count += 1 
+  end   
 end
